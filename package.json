@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
    
-    "dev": "development & nodemon server.js"
+    "dev": " nodemon server.js"
   },
   "author": "Akshit Bhati",
   "license": "ISC",

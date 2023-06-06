@@ -10,7 +10,7 @@ router.get("/googlelogin", passport.authenticate("google", {
 }))
 
 router.get("/login",passport.authenticate("google",{
-    successRedirect:process.env.GOOGLE_CALLBACK_URL
+    successRedirect:process.env.FRONTEND_URL
 }),
     (req,res, next) => {
         res.send("Logged In")

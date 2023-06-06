@@ -13,4 +13,4 @@ app.get("/" ,(req, res, next) => {
     res.send("Working")
 })
 
-app.listen(process.env.PORT, () => console.log(`Server is working at Port ${process.env.PORT}, in ${process.env.NODE_ENV} MODE`) )
+app.listen(process.env.PORT, () => console.log(`Server is working at Port ${process.env.PORT}, in  MODE`) )

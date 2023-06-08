@@ -5,8 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "set NODE_ENV = production & node server.js",
-    "dev": "set NODE_ENV = production & nodemon server.js"   
+   
   },
   "author": "Akshit Bhati",
   "license": "ISC",

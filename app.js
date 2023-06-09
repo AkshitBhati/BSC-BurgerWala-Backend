@@ -21,9 +21,9 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   cookie: {
-//     secure: process.env.NODE_ENV === "production",
-//     httpOnly: true,
-//     sameSite:  "None"
+    secure: process.env.NODE_ENV === "production",
+    httpOnly: true,
+    sameSite:  "None"
   },
     keys:['akshit']
 }));
@@ -40,7 +40,7 @@ app.use(urlencoded({
 }))
 app.use(cors({
     credentials:true,
-    origin:process.env.FRONTEND_URL,
+    origin:origin: ["http://localhost:3000", "https://expensive-undershirt-seal.cyclic.app"],
     methods:["GET", "POST", "PUT", "DELETE"]
 }))
 connectPassport()

@@ -15,18 +15,18 @@ dotenv.config({
     path:"./config/config.env"
 })
 
-//Using MiddleWares
-// app.use(session({
-//   secret: process.env.SESSION_SECRET,
-//   resave: false,
-//   saveUninitialized: false,
-//   cookie: {
-//     secure: process.env.NODE_ENV === "production",
-//     httpOnly: true,
-//     sameSite: process.env.NODE_ENV === "production" ? None : false,
-//   },
-//     keys:['akshit']
-// }));
+Using MiddleWares
+app.use(session({
+  secret: process.env.SESSION_SECRET,
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    secure: process.env.NODE_ENV === "production",
+    httpOnly: true,
+    sameSite: process.env.NODE_ENV === "production" ? None : false,
+  },
+    keys:['akshit']
+}));
 
 
 app.use(passport.authenticate("session"))

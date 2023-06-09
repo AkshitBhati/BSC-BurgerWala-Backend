@@ -21,9 +21,9 @@ app.use(session({
     resave:false,
     saveUninitialized:false,
     cookie:{
-      secure:process.env.NODE_ENV === "development"? false : true,
-        httpOnly:process.env.NODE_ENV === "development"? false : true,
-        sameSite:process.env.NODE_ENV === "development"? false : "None",
+    secure: process.env.NODE_ENV === "production",
+  httpOnly: true,
+  sameSite: process.env.NODE_ENV === "production" ? "None" : false,
 
     }
 }))

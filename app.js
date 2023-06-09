@@ -15,7 +15,7 @@ dotenv.config({
     path:"./config/config.env"
 })
 
-Using MiddleWares
+// Using MiddleWares
 app.use(session({
   secret: process.env.SESSION_SECRET,
   resave: false,

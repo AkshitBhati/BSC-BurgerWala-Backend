@@ -39,7 +39,7 @@ app.use(urlencoded({
 }))
 app.use(cors({
     credentials:true,
-    origin: ["http://localhost:3000", "https://expensive-undershirt-seal.cyclic.app"],
+    origin: process.env.FRONTEND_URL,
     methods:["GET", "POST", "PUT", "DELETE"]
 }))
 connectPassport()
